@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Impresiones Joss</h1>
+        <div id="carrito">
+            <button id="ver-carrito">Ver Carrito (0)</button>
+            <input type="text" id="input-buscar" placeholder="Buscar obra...">
+            <button id="buscar">Buscar</button>
+        </div>
+    </header>
+
+    <div id="galeria" class="galeria"></div>
+
+    <!-- Detalle de la Obra -->
+    <div id="detalle-obra" class="detalle-obra">
+        <div class="detalle-imagen">
+            <img id="detalle-imagen" src="" alt="">
+        </div>
+        <div class="detalle-info">
+            <h2 id="detalle-titulo"></h2>
+            <h3 id="detalle-artista"></h3>
+            <p id="detalle-descripcion" style="font-style: italic;"></p>
+            <strong id="detalle-precio"></strong>
+            <button id="agregar-carrito-detalle">Agregar al Carrito</button>
+            <button id="cerrar-detalle">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div id="carrito-detalles" class="carrito-detalles">
+        <h2>Carrito de Compras</h2>
+        <div id="lista-carrito"></div>
+        <div>
+            <p id="total-carrito">Total: $0</p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="cerrar-carrito">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
